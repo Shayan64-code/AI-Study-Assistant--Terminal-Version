@@ -12,7 +12,6 @@ messages= [{"role": "system", "content": ("You are a kindful study assistant.",
 while True:
 
     message = input("User: ")
-    print("-" * 40)
 
     if message.lower() == "exit":
         print("Good Luck for Exams")
@@ -33,6 +32,7 @@ while True:
         messages.append({"role": "assistant", "content": reply})
 
         print("Nvidia: ", reply)
+        print("-" * 40)
 
     except Exception as e:
         print("Error: ", e)
